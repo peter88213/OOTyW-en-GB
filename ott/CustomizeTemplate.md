@@ -5,7 +5,7 @@
 * 21 x 29,7 cm (A4) paper size
 * 10 p Arial
 * single-spaced
-* Document language: de-DE
+* Document language: en-GB
 
 ## How to localize/customize your template
 
