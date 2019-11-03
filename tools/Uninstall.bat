@@ -9,13 +9,13 @@ REM copyright: (c) 2019, Peter Triesberger
 REM 
 REM note: This script is to be executed manually.
 REM 
-REM precondition: OOTyW_en-GB is installed.
-REM precondition: OpenOffice.org 3.x or Apache OpenOffice 4.x is installed.
-REM postcondition: Previously auto-installed items of OOTyW_en-GB are removed.
-REM postcondition: The template remains, if user wants it.
+REM Preconditions:
+REM * OOTyW_en-GB is installed.
+REM * OpenOffice.org 3.x or Apache OpenOffice 4.x is installed.
 REM 
-REM since: 2018-10-31
-REM History: see Install.bat
+REM Postconditions:
+REM * Previously auto-installed items of OOTyW_en-GB are removed.
+REM * The template remains, if user wants it.
 
 set _release=2.0.0
 
