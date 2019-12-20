@@ -17,7 +17,7 @@ REM Postconditions:
 REM * Previously auto-installed items of OOTyW_en-GB are removed.
 REM * The template remains, if user wants it.
 
-set _release=2.0.0
+set _release=2.0.1
 
 set _OpenOffice4_w64=c:\Program Files (x86)\OpenOffice 4
 set _OpenOffice4_w32=c:\Program Files\OpenOffice 4
