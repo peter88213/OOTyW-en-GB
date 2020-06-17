@@ -19,8 +19,6 @@
 		<!-- Generate the LibreOffice distribution -->
 		
 		<mkdir dir="${dist}/${release-name-L}" />
-		<mkdir dir="${dist}/${release-name-L}/META-INF" />
-		<mkdir dir="${dist}/${release-name-L}/Tooltips" />
 
 		<copy todir="${dist}/${release-name-L}/${ant.project.name}"> 
 			<fileset dir="${oxt}/${ant.project.name}" />
@@ -69,8 +67,6 @@
 		<!-- Generate the Apache OpenOffice distribution -->
 
 		<mkdir dir="${dist}/${release-name-A}" />
-		<mkdir dir="${dist}/${release-name-A}/META-INF" />
-		<mkdir dir="${dist}/${release-name-A}/Tooltips" />
 
 		<copy todir="${dist}/${release-name-A}/${ant.project.name}"> 
 			<fileset dir="${oxt}/${ant.project.name}" />
@@ -119,8 +115,6 @@
 		<!-- Generate the OpenOffice.Org 3.x distribution" -->
 		
 		<mkdir dir="${dist}/${release-name}" />
-		<mkdir dir="${dist}/${release-name}/META-INF" />
-		<mkdir dir="${dist}/${release-name}/Tooltips" />
 
 		<copy todir="${dist}/${release-name}/${ant.project.name}"> 
 			<fileset dir="${oxt}/${ant.project.name}" />
