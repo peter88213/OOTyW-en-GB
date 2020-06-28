@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="curly_en-GB" basedir=".">
-	<property name="release" value="3.0.2" />
+	<property name="language" value="en" /> 
+	<property name="release" value="3.1.0" />
 	<property name="project-name" value="${ant.project.name}" />
 	<property name="release-name" value="${project-name}-${release}" />
 	<property name="release-name-L" value="${project-name}-L-${release}" />
@@ -48,21 +49,31 @@
 			<fileset dir="${src}/Tooltips" />
 		</copy>
 		
+		<copy file="${src}/../docs/help/help-de.html" todir="${dist}/${release-name-L}/help" />
+		<replace encoding="utf-8" file="${dist}/${release-name-L}/help/help-de.html" token="cornflowerblue" value="green" />
+		<copy file="${src}/../docs/help/help-en.html" todir="${dist}/${release-name-L}/help" />
+		<replace encoding="utf-8" file="${dist}/${release-name-L}/help/help-en.html" token="cornflowerblue" value="green" />
+		<copy file="${src}/../docs/help/help-fr.html" todir="${dist}/${release-name-L}/help" />
+		<replace encoding="utf-8" file="${dist}/${release-name-L}/help/help-fr.html" token="cornflowerblue" value="green" />
+
 		<copy file="${src}/project/Common.xba" todir="${dist}/${release-name-L}/${ant.project.name}" />
 		<copy file="${src}/project/Revert.xba" todir="${dist}/${release-name-L}/${ant.project.name}" />
+		<copy file="${src}/project/help.xba" todir="${dist}/${release-name-L}/${ant.project.name}" />
+		<replace encoding="utf-8" file="${dist}/${release-name-L}/${ant.project.name}/help.xba" token="curly" value="${ant.project.name}" />
+		<replace encoding="utf-8" file="${dist}/${release-name-L}/${ant.project.name}/help.xba" token="help.html" value="help-${language}.html" />
 
 		<copy file="${oxt}/files-L/AddonUI.xcu" todir="${dist}/${release-name-L}" />
-		<replace file="${dist}/${release-name-L}/AddonUI.xcu" token="0.99.0" value="${release}" />
+		<replace encoding="utf-8" file="${dist}/${release-name-L}/AddonUI.xcu" token="0.99.0" value="${release}" />
 
 		<copy file="${oxt}/files-L/description.xml" todir="${dist}/${release-name-L}" />
-		<replace file="${dist}/${release-name-L}/description.xml" token="0.99.0" value="${release}" />
+		<replace encoding="utf-8" file="${dist}/${release-name-L}/description.xml" token="0.99.0" value="${release}" />
 
 		<copy file="../README.md" todir="${dist}/${release-name-L}" />
 
 		<zip destfile="${dist}/${release-name-L}.oxt" basedir="${dist}/${release-name-L}" />
 
 		<copy file="./${ant.project.name}-L.update.xml" overwrite="True" todir=".." />
-		<replace file="../${ant.project.name}-L.update.xml" token="0.99.0" value="${release}" />
+		<replace encoding="utf-8" file="../${ant.project.name}-L.update.xml" token="0.99.0" value="${release}" />
 
 		<!-- Generate the Apache OpenOffice distribution -->
 
@@ -96,21 +107,28 @@
 			<fileset dir="${src}/Tooltips" />
 		</copy>
 		
+		<copy file="${src}/../docs/help/help-de.html" todir="${dist}/${release-name-A}/help" />
+		<copy file="${src}/../docs/help/help-en.html" todir="${dist}/${release-name-A}/help" />
+		<copy file="${src}/../docs/help/help-fr.html" todir="${dist}/${release-name-A}/help" />
+
 		<copy file="${src}/project/Common.xba" todir="${dist}/${release-name-A}/${ant.project.name}" />
 		<copy file="${src}/project/Revert.xba" todir="${dist}/${release-name-A}/${ant.project.name}" />
+		<copy file="${src}/project/help.xba" todir="${dist}/${release-name-A}/${ant.project.name}" />
+		<replace encoding="utf-8" file="${dist}/${release-name-A}/${ant.project.name}/help.xba" token="curly" value="${ant.project.name}" />
+		<replace encoding="utf-8" file="${dist}/${release-name-A}/${ant.project.name}/help.xba" token="help.html" value="help-${language}.html" />
 
 		<copy file="${oxt}/files-A/AddonUI.xcu" todir="${dist}/${release-name-A}" />
-		<replace file="${dist}/${release-name-A}/AddonUI.xcu" token="0.99.0" value="${release}" />
+		<replace encoding="utf-8" file="${dist}/${release-name-A}/AddonUI.xcu" token="0.99.0" value="${release}" />
 
 		<copy file="${oxt}/files-A/description.xml" todir="${dist}/${release-name-A}" />
-		<replace file="${dist}/${release-name-A}/description.xml" token="0.99.0" value="${release}" />
+		<replace encoding="utf-8" file="${dist}/${release-name-A}/description.xml" token="0.99.0" value="${release}" />
 
 		<copy file="../README.md" todir="${dist}/${release-name-A}" />
 
 		<zip destfile="${dist}/${release-name-A}.oxt" basedir="${dist}/${release-name-A}" />
 
 		<copy file="./${ant.project.name}-A.update.xml" overwrite="True" todir=".." />
-		<replace file="../${ant.project.name}-A.update.xml" token="0.99.0" value="${release}" />
+		<replace encoding="utf-8" file="../${ant.project.name}-A.update.xml" token="0.99.0" value="${release}" />
 
 		<!-- Generate the OpenOffice.Org 3.x distribution" -->
 		
@@ -144,21 +162,28 @@
 			<fileset dir="${src}/Tooltips" />
 		</copy>
 		
+		<copy file="${src}/../docs/help/help-de.html" todir="${dist}/${release-name}/help" />
+		<copy file="${src}/../docs/help/help-en.html" todir="${dist}/${release-name}/help" />
+		<copy file="${src}/../docs/help/help-fr.html" todir="${dist}/${release-name}/help" />
+
 		<copy file="${src}/project/Common.xba" todir="${dist}/${release-name}/${ant.project.name}" />
 		<copy file="${src}/project/Revert.xba" todir="${dist}/${release-name}/${ant.project.name}" />
+		<copy file="${src}/project/help.xba" todir="${dist}/${release-name}/${ant.project.name}" />
+		<replace encoding="utf-8" file="${dist}/${release-name}/${ant.project.name}/help.xba" token="curly" value="${ant.project.name}" />
+		<replace encoding="utf-8" file="${dist}/${release-name}/${ant.project.name}/help.xba" token="help.html" value="help-${language}.html" />
 
 		<copy file="${oxt}/files/AddonUI.xcu" todir="${dist}/${release-name}" />
-		<replace file="${dist}/${release-name}/AddonUI.xcu" token="0.99.0" value="${release}" />
+		<replace encoding="utf-8" file="${dist}/${release-name}/AddonUI.xcu" token="0.99.0" value="${release}" />
 
 		<copy file="${oxt}/files/description.xml" todir="${dist}/${release-name}" />
-		<replace file="${dist}/${release-name}/description.xml" token="0.99.0" value="${release}" />
+		<replace encoding="utf-8" file="${dist}/${release-name}/description.xml" token="0.99.0" value="${release}" />
 
 		<copy file="../README.md" todir="${dist}/${release-name}" />
 
 		<zip destfile="${dist}/${release-name}.oxt" basedir="${dist}/${release-name}" />
 
 		<copy file="./${ant.project.name}.update.xml" overwrite="True" todir=".." />
-		<replace file="../${ant.project.name}.update.xml" token="0.99.0" value="${release}" />
+		<replace encoding="utf-8" file="../${ant.project.name}.update.xml" token="0.99.0" value="${release}" />
 
 	</target>
 	

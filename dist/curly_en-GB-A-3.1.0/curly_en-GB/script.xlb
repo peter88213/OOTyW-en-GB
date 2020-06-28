@@ -4,4 +4,5 @@
  <library:element library:name="Common"/>
  <library:element library:name="Revert"/>
  <library:element library:name="QM_en_GB"/>
+ <library:element library:name="help"/>
 </library:library>
