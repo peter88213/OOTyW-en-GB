@@ -26,11 +26,11 @@
 
 * Install it using the OpenOffice/Libreoffice extension manager.
 
-* After installation (and Office restart) you find a new submenu for each language version in the "Format" menu.
+* After installation (and Office restart) you find a new submenu for each language version in the *Format* menu.
 
 * Optionally, you can dock a toolbar for your convenience. If you don't need the toolbar (e.g. because it's not your first language), just close it.
 
-* If no additional submenu shows up in the "Format" menu, please look in the "Tools > Extensions" menu.
+* If no additional submenu shows up in the *Format* menu, please look in the *Tools > Extensions* menu.
 
 ## System requirements
 
@@ -39,25 +39,25 @@
 
 ## Conventions
 
-* In order to avoid confusion with single quotes, it is advised to substitute leading or trailing apostrophes by a number sign "#" when typing.
+* In order to avoid confusion with single quotes, it is advised to substitute leading or trailing apostrophes by a number sign (`#`) when typing.
 
-* Number signs "#" will be replaced with apostrophes when converting from "typewriter style" to a "language style".
+* Number signs (`#`) will be replaced with apostrophes when converting from  _typewriter style_  to a  _language style_.
 
-* When converting from a "language style" to "typewriter style", apostrophes might be replaced automatically with number signs "#". 
+* When converting from a  _language style_  to  _typewriter style_, apostrophes might be replaced automatically with number signs (`#`). 
 
-* In order to avoid confusion with hyphens, it is advised to substitute dashes by double hyphens "--" when typing.
+* In order to avoid confusion with hyphens, it is advised to substitute dashes by double hyphens (`--`) when typing.
 
-* Double hyphens "--" will be replaced with dashes when converting from "typewriter style" to a "language style".
+* Double hyphens (`--`) will be replaced with dashes when converting from  _typewriter style_  to a  _language style_.
 
-* When converting from a "language style" to "typewriter style", dashes might be replaced automatically with double hyphens "--". 
+* When converting from a  _language style_  to  _typewriter style_, dashes might be replaced automatically with double hyphens (`--`). 
 
-* "Dialog view" is only possible in a "language style".
+*  _Dialog view_  is only possible in a  _language style_.
 
-* When going back from "Dialog view" to "normal view", the whole document's font colour is set to black. 
+* When going back from  _Dialog view_  to  _normal view_, the whole document's font colour is set to black. 
 
 * You can install several language variants in parallel. Use the exchange format to convert quotation marks between different languages.
 
-* Conversion th the exchange format is only possible from a "language style".
+* Conversion th the exchange format is only possible from a  _language style_.
 
 ## Credits
 
