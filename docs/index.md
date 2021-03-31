@@ -1,8 +1,8 @@
 ![Screenshot: "curly" menu](https://raw.githubusercontent.com/peter88213/curly-en-GB/master/docs/Screenshots/Menu-be.png)
 
-Writer's auto-formatting function can convert the typewriter keyboard's "straight" quotation marks and apostrophes into typographical "curly" ones. However, this only works for paragraphs assigned the "default" style sheet and for the quotation marks once set. 
+When post-editing existing text, Writer's auto-formatting feature can convert the typewriter keyboard's "straight" quotes and apostrophes into typographic "curly" ones. However, this works only for paragraphs assigned the "default" paragraph style and, depending on the document language, for the quotation marks once set. 
 
-The "curly quotes" extensions convert quotes, apostrophes, dashes and ellipses between different language-dependent styles, whatever the document or system language. You can also convert the typographic glyphs back to the "typewriter style" if desired. This works independently of the paragraph style set.
+The "curly quotes" extensions convert quotes, apostrophes, dashes and ellipses between different language-dependent styles, whatever the document or system language. You can also convert the typographic glyphs back to the "typewriter" style if desired. This works regardless of the paragraph style you set.
 
 You can install several language variants in parallel. Use the exchange format to convert quotation marks between different languages.
 
