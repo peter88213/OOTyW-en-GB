@@ -34,4 +34,4 @@
 
 * You can install several language variants in parallel. Use the exchange format to convert quotation marks between different languages.
 
-* Conversion th the exchange format is only possible from a  _language style_.
+* Conversion to the exchange format is only possible from a  _language style_.

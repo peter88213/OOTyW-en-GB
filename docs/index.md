@@ -41,6 +41,7 @@
 
 * If no additional submenu shows up in the *Format* menu, please look in the *Tools > Extensions* menu.
 
+[changelog](changelog)
 
 ## Usage
 
