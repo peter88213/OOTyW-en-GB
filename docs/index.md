@@ -8,7 +8,13 @@
 
 * Revert to keyboard characters.
 
-* Extensions are available for de-DE, de-CH, en-US, en-GB, fr-FR.
+* Extensions are available for 
+ en-GB, 
+ [en-US](https://peter88213.github.io/curly-en-US), 
+ [de-DE](https://peter88213.github.io/curly-de-DE), 
+ [de-CH](https://peter88213.github.io/curly-de-CH), 
+ [fr-FR]((https://peter88213.github.io/curly-fr-FR)).
+
 
 * Convert from one language to another via exchange format.
 
