@@ -1,4 +1,4 @@
-![Screenshot: "curly" menu](https://raw.githubusercontent.com/peter88213/curly-en-GB/master/docs/Screenshots/Menu-be.png)
+![Screenshot: "curly" menu](Screenshots/Menu-be.png)
 
 When post-editing existing text, Writer's auto-formatting feature can convert the typewriter keyboard's "straight" quotes and apostrophes into typographic "curly" ones. However, this works only for paragraphs assigned the "default" paragraph style and, depending on the document language, for the quotation marks once set. 
 
@@ -28,7 +28,7 @@ You can install several language variants in parallel. Use the exchange format t
 
 * Dialog view to identify direct speech.
 
-![Screenshot: Show direct speech in OpenOffice Writer](https://raw.githubusercontent.com/peter88213/curly-en-GB/master/docs/Screenshots/DirectSpeech-be.png)
+![Screenshot: Show direct speech in OpenOffice Writer](Screenshots/DirectSpeech-be.png)
 
 ## System requirements
 
