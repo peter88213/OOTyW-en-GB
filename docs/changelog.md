@@ -2,6 +2,10 @@
 
 ## Changelog
 
+### v3.2.1 Make the help function os independent
+
+Change the HTML launch mechanism of the show_help macro. Based on curly v3.2.0
+
 ### v3.2.0 Service update
 
 Move the release/update location back to the language-specific repository.
