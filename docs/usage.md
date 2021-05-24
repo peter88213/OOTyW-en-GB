@@ -1,4 +1,6 @@
-[Homepage](index)
+[Project home page](index) > Instructions for use
+
+------------------------------------------------------------------------
 
 ## Instructions for use
 
