@@ -6,6 +6,10 @@ The "curly quotes" extensions convert quotes, apostrophes, dashes and ellipses b
 
 You can install several language variants in parallel. Use the exchange format to convert quotation marks between different languages.
 
+## Please note
+
+ The *curly_en-GB* variant is intended for text in which the literal speech has been placed in single quotation marks. If you use double quotation marks when typing, it is better to use the *curly_en-US* variant. If you want to convert double quotes to single quotes, convert your text to exchange format using *curly_en-US* first. Then apply *curly_en-GB* for formatting.
+
 ## Features
 
 * _Smart quotes_ macros.
