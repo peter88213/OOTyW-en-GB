@@ -8,17 +8,17 @@ You can install several language variants in parallel. Use the exchange format t
 
 ## Please note
 
- The *curly_en-GB* variant is intended for text in which the literal speech has been placed in single quotation marks. If you use double quotation marks when typing, it is better to use the *curly_en-US* variant. If you want to convert double quotes to single quotes, convert your text to exchange format using *curly_en-US* first. Then apply *curly_en-GB* for formatting.
+ The *curly-en-GB* variant is intended for text in which the literal speech has been placed in single quotation marks. If you use double quotation marks when typing, it is better to use the [curly-en-US](https://peter88213.github.io/curly-en-US/) variant. If you want to convert double quotes to single quotes, convert your text to exchange format using *curly-en-US* first. Then apply *curly-en-GB* for formatting.
 
 ## Features
 
-* _Smart quotes_ macros.
+- *Smart quotes* macros.
 
-* _Find and replace_ macros for apostrophes and dashes.
+- *Find and replace* macros for apostrophes and dashes.
 
-* Revert to keyboard characters.
+- Revert to keyboard characters.
 
-* Extensions are available for 
+- Extensions are available for 
  en-GB, 
  [en-US](https://peter88213.github.io/curly-en-US), 
  [de-DE](https://peter88213.github.io/curly-de-DE), 
@@ -26,18 +26,18 @@ You can install several language variants in parallel. Use the exchange format t
  [fr-FR](https://peter88213.github.io/curly-fr-FR).
 
 
-* Convert from one language to another via exchange format.
+- Convert from one language to another via exchange format.
 
-* Menu and toolbar with buttons.
+- Menu and toolbar with buttons.
 
-* Dialog view to identify direct speech.
+- Dialog view to identify direct speech.
 
 ![Screenshot: Show direct speech in OpenOffice Writer](Screenshots/DirectSpeech-be.png)
 
 ## System requirements
 
-* __OpenOffice.org 3.x or Apache OpenOffice 4.x or LibreOffice 6.x__
-* __Java__ (OpenOffice needs it for macro execution)
+- **OpenOffice.org 3.x or Apache OpenOffice 4.x or LibreOffice 6.x**
+- **Java** (OpenOffice needs it for macro execution)
 
 ## Download and install
 
@@ -49,13 +49,13 @@ Download the variant that matches your Office installation:
 
 [OpenOffice.org 3.x variant (curly_en-GB-3.2.1.oxt)](https://raw.githubusercontent.com/peter88213/curly-en-GB/master/curly_en-GB-3.2.1.oxt)
 
-* Installation right at download, by double-clicking on the downloaded file, or via the OpenOffice/LibreOffice Extension Manager.
+- Installation right at download, by double-clicking on the downloaded file, or via the OpenOffice/LibreOffice Extension Manager.
 
-* After installation (and Office restart) you find a new submenu for each language version in the *Format* menu.
+- After installation (and Office restart) you find a new submenu for each language version in the **Format** menu.
 
-* Optionally, you can dock a toolbar for your convenience. If you don't need the toolbar (e.g. because it's not your first language), just close it.
+- Optionally, you can dock a toolbar for your convenience. If you don't need the toolbar (e.g. because it's not your first language), just close it.
 
-* If no additional submenu shows up in the *Format* menu, please look in the *Tools > Extensions* menu.
+- If no additional submenu shows up in the **Format** menu, please look in the **Tools > Extensions** menu.
 
 [Changelog](changelog)
 
