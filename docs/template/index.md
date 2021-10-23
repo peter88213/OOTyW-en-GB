@@ -36,14 +36,14 @@ The *curly-en-GB* variant is intended for text in which the literal speech has b
 
 ## System requirements
 
-- **OpenOffice.org 3.x or Apache OpenOffice 4.x or LibreOffice 6.x**
+- **OpenOffice.org 3.x or Apache OpenOffice 4.x or LibreOffice 6+**
 - **Java** (OpenOffice needs it for macro execution)
 
 ## Download and install
 
 Download the variant that matches your Office installation:
 
-[LibreOffice 6.x variant (curly_en-GB-L-0.99.0.oxt)](https://raw.githubusercontent.com/peter88213/curly-en-GB/master/curly_en-GB-L-0.99.0.oxt)
+[LibreOffice 6+ variant (curly_en-GB-L-0.99.0.oxt)](https://raw.githubusercontent.com/peter88213/curly-en-GB/master/curly_en-GB-L-0.99.0.oxt)
 
 [Apache OpenOffice 4.x variant (curly_en-GB-A-0.99.0.oxt)](https://raw.githubusercontent.com/peter88213/curly-en-GB/master/curly_en-GB-A-0.99.0.oxt)
 
