@@ -8,7 +8,7 @@ You can install several language variants in parallel. Use the exchange format t
 
 ## Please note
 
- The *curly-en-GB* variant is intended for text in which the literal speech has been placed in single quotation marks. If you use double quotation marks when typing, it is better to use the [curly-en-US](https://peter88213.github.io/curly-en-US/) variant. If you want to convert double quotes to single quotes, convert your text to exchange format using *curly-en-US* first. Then apply *curly-en-GB* for formatting.
+The *curly-en-GB* variant is intended for text in which the literal speech has been placed in single quotation marks. If you use double quotation marks when typing, it is better to use the [curly-en-US](https://peter88213.github.io/curly-en-US/) variant. If you want to convert double quotes to single quotes, convert your text to exchange format using *curly-en-US* first. Then apply *curly-en-GB* for formatting.
 
 ## Features
 
@@ -43,11 +43,11 @@ You can install several language variants in parallel. Use the exchange format t
 
 Download the variant that matches your Office installation:
 
-[LibreOffice 6+ variant (curly_en-GB-L-3.2.1.oxt)](https://raw.githubusercontent.com/peter88213/curly-en-GB/master/curly_en-GB-L-3.2.1.oxt)
+[LibreOffice 6+ variant (curly_en-GB-L-3.2.2.oxt)](https://raw.githubusercontent.com/peter88213/curly-en-GB/master/curly_en-GB-L-3.2.2.oxt)
 
-[Apache OpenOffice 4.x variant (curly_en-GB-A-3.2.1.oxt)](https://raw.githubusercontent.com/peter88213/curly-en-GB/master/curly_en-GB-A-3.2.1.oxt)
+[Apache OpenOffice 4.x variant (curly_en-GB-A-3.2.2.oxt)](https://raw.githubusercontent.com/peter88213/curly-en-GB/master/curly_en-GB-A-3.2.2.oxt)
 
-[OpenOffice.org 3.x variant (curly_en-GB-3.2.1.oxt)](https://raw.githubusercontent.com/peter88213/curly-en-GB/master/curly_en-GB-3.2.1.oxt)
+[OpenOffice.org 3.x variant (curly_en-GB-3.2.2.oxt)](https://raw.githubusercontent.com/peter88213/curly-en-GB/master/curly_en-GB-3.2.2.oxt)
 
 - Installation right at download, by double-clicking on the downloaded file, or via the OpenOffice/LibreOffice Extension Manager.
 
