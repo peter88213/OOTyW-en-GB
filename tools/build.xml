@@ -1,9 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="build" basedir="."> 
-	<target name="publish">
-		  <exec executable="cmd">
-		    	<arg value="/c"/>
-		    	<arg value="publish.bat"/>
-		  </exec>
+<project name="curly_en-GB" basedir=".">
+	<property name="language" value="en" />
+	<property name="country" value="GB" />
+	
+	<property name="release" value="3.3.0" />
+	
+	<property name="project-name" value="${ant.project.name}" />
+	<property name="release-name" value="${project-name}-${release}" />
+	<property name="release-name-L" value="${project-name}-L-${release}" />
+	<property name="release-name-A" value="${project-name}-A-${release}" />
+	
+	<property name="curly" location="../../curly" />
+	<property name="description" location="../../curly/description" />
+	<property name="addon_ui" location="../addon_ui" />
+	<property name="update" location="../../curly/update" />
+	<property name="docs" location="../docs" />
+	<property name="build" location="../build" />
+	<property name="src" location="../src" />
+	<property name="dist" location=".." />
+
+	<target name="build" description="Generate the extension">
+		
+		<delete>
+			<fileset dir="${dist}" includes="*.oxt" />
+		</delete>
+		
+		<!-- *** Generate the LibreOffice distribution *** -->
+		
+		<!-- Prepare build directory structure -->
+		
+		<delete dir="${build}" />
+		<mkdir dir="${build}" />
+		<mkdir dir="${build}/${ant.project.name}" />
+
+		<!-- Copy the common parts -->
+		
+		<copy todir="${build}"> 
+			<fileset dir="${curly}/oxt" />
+		</copy>
+
+		<copy todir="${build}/${ant.project.name}"> 
+			<fileset dir="${curly}/src" />
+		</copy>
+		
+		<!-- Copy the country specific parts --> 
+
+		<copy todir="${build}/${ant.project.name}"> 
+			<fileset dir="${src}" />
+		</copy>
+
+		<!-- Copy the Office specific parts -->
+
+		<copy file="${addon_ui}/AddonUI-L.xcu" tofile="${build}/AddonUI.xcu" />
+		<copy file="${description}/description-L.xml" tofile="${build}/description.xml" />
+		<replace encoding="utf-8" file="${build}/description.xml" token="0.99.0" value="${release}" />
+		
+		<!-- Set language and country -->
+		
+		<replace encoding="utf-8" dir="${build}" token="%lc%" value="${language}" />
+		<replace encoding="utf-8" dir="${build}" token="%cc%" value="${country}" />
+
+		<!-- Compile the extension -->
+		
+		<zip destfile="${dist}/${release-name-L}.oxt" basedir="${build}" />
+		
+		<!-- Place the update information -->
+
+		<copy file="${update}/L.update.xml" overwrite="True" tofile="${dist}/${ant.project.name}-L.update.xml" />
+		<replace encoding="utf-8" file="${dist}/${ant.project.name}-L.update.xml" token="0.99.0" value="${release}" />
+		<replace encoding="utf-8" file="${dist}/${ant.project.name}-L.update.xml" token="%lc%" value="${language}" />
+		<replace encoding="utf-8" file="${dist}/${ant.project.name}-L.update.xml" token="%cc%" value="${country}" />
+		<copy file="${dist}/${ant.project.name}-L.update.xml" overwrite="True" todir="${curly}/oxt-${language}-${country}" />
+
+		<!-- *** Generate the Apache OpenOffice distribution *** -->
+		
+		<!-- Prepare build directory structure -->
+		
+		<delete dir="${build}" />
+		<mkdir dir="${build}" />
+		<mkdir dir="${build}/${ant.project.name}" />
+
+		<!-- Copy the common parts -->
+		
+		<copy todir="${build}"> 
+			<fileset dir="${curly}/oxt" />
+		</copy>
+
+		<copy todir="${build}/${ant.project.name}"> 
+			<fileset dir="${curly}/src" />
+		</copy>
+		
+		<!-- Copy the country specific parts --> 
+
+		<copy todir="${build}/${ant.project.name}"> 
+			<fileset dir="${src}" />
+		</copy>
+
+		<!-- Copy the Office specific parts -->
+
+		<copy file="${addon_ui}/AddonUI-A.xcu" tofile="${build}/AddonUI.xcu" />
+		<copy file="${description}/description-A.xml" tofile="${build}/description.xml" />
+		<replace encoding="utf-8" file="${build}/description.xml" token="0.99.0" value="${release}" />
+		
+		<!-- Set language and country -->
+		
+		<replace encoding="utf-8" dir="${build}" token="%lc%" value="${language}" />
+		<replace encoding="utf-8" dir="${build}" token="%cc%" value="${country}" />
+
+		<!-- Compile the extension -->
+		
+		<zip destfile="${dist}/${release-name-A}.oxt" basedir="${build}" />
+		
+		<!-- Place the update information -->
+
+		<copy file="${update}/A.update.xml" overwrite="True" tofile="${dist}/${ant.project.name}-A.update.xml" />
+		<replace encoding="utf-8" file="${dist}/${ant.project.name}-A.update.xml" token="0.99.0" value="${release}" />
+		<replace encoding="utf-8" file="${dist}/${ant.project.name}-A.update.xml" token="%lc%" value="${language}" />
+		<replace encoding="utf-8" file="${dist}/${ant.project.name}-A.update.xml" token="%cc%" value="${country}" />
+		<copy file="${dist}/${ant.project.name}-A.update.xml" overwrite="True" todir="${curly}/oxt-${language}-${country}" />
+
+		<!-- *** Generate the OpenOffice distribution *** -->
+		
+		<!-- Prepare build directory structure -->
+		
+		<delete dir="${build}" />
+		<mkdir dir="${build}" />
+		<mkdir dir="${build}/${ant.project.name}" />
+
+		<!-- Copy the common parts -->
+		
+		<copy todir="${build}"> 
+			<fileset dir="${curly}/oxt" />
+		</copy>
+
+		<copy todir="${build}/${ant.project.name}"> 
+			<fileset dir="${curly}/src" />
+		</copy>
+		
+		<!-- Copy the country specific parts --> 
+
+		<copy todir="${build}/${ant.project.name}"> 
+			<fileset dir="${src}" />
+		</copy>
+
+		<!-- Copy the Office specific parts -->
+
+		<copy file="${addon_ui}/AddonUI.xcu" tofile="${build}/AddonUI.xcu" />
+		<copy file="${description}/description.xml" tofile="${build}/description.xml" />
+		<replace encoding="utf-8" file="${build}/description.xml" token="0.99.0" value="${release}" />
+		
+		<!-- Set language and country -->
+		
+		<replace encoding="utf-8" dir="${build}" token="%lc%" value="${language}" />
+		<replace encoding="utf-8" dir="${build}" token="%cc%" value="${country}" />
+
+		<!-- Compile the extension -->
+		
+		<zip destfile="${dist}/${release-name}.oxt" basedir="${build}" />
+		
+		<!-- Place the update information -->
+
+		<copy file="${update}/update.xml" overwrite="True" tofile="${dist}/${ant.project.name}.update.xml" />
+		<replace encoding="utf-8" file="${dist}/${ant.project.name}.update.xml" token="0.99.0" value="${release}" />
+		<replace encoding="utf-8" file="${dist}/${ant.project.name}.update.xml" token="%lc%" value="${language}" />
+		<replace encoding="utf-8" file="${dist}/${ant.project.name}.update.xml" token="%cc%" value="${country}" />
+		<copy file="${dist}/${ant.project.name}.update.xml" overwrite="True" todir="${curly}/oxt-${language}-${country}" />
+
+
+		<!-- Clean up -->
+			
+		<delete dir="${build}" />
+			
+		<!-- Update the download link -->
+			
+		<copy file="${docs}/template/index.md" overwrite="True" todir="${docs}" />
+		<replace encoding="utf-8" file="${docs}/index.md" token="0.99.0" value="${release}" />
+		<copy file="${dist}/${ant.project.name}.update.xml" overwrite="True" todir="${curly}/oxt-${language}-${country}" />
+
+			
 	</target>
+
 </project>
