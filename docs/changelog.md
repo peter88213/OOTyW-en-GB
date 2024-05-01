@@ -4,6 +4,12 @@
 
 ## Changelog
 
+### v3.3.1
+
+- Improve the apostrophe replacement algorithm in order not to interfere with the novelibre section splitter.
+
+Based on curly v3.3.3
+
 ### v3.2.2 Optional update
 
 Modify the "Back to standard view" icon for better display in LibreOffice 7.1.
