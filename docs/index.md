@@ -43,11 +43,11 @@ The *curly-en-GB* variant is intended for text in which the literal speech has b
 
 Download the variant that matches your Office installation:
 
-[LibreOffice 6+ variant (curly_en-GB-L-3.3.1.oxt)](https://raw.githubusercontent.com/peter88213/curly-en-GB/master/curly_en-GB-L-3.3.1.oxt)
+[LibreOffice 6+ variant (curly_en-GB-L-3.3.2.oxt)](https://raw.githubusercontent.com/peter88213/curly-en-GB/master/curly_en-GB-L-3.3.2.oxt)
 
-[Apache OpenOffice 4.x variant (curly_en-GB-A-3.3.1.oxt)](https://raw.githubusercontent.com/peter88213/curly-en-GB/master/curly_en-GB-A-3.3.1.oxt)
+[Apache OpenOffice 4.x variant (curly_en-GB-A-3.3.2.oxt)](https://raw.githubusercontent.com/peter88213/curly-en-GB/master/curly_en-GB-A-3.3.2.oxt)
 
-[OpenOffice.org 3.x variant (curly_en-GB-3.3.1.oxt)](https://raw.githubusercontent.com/peter88213/curly-en-GB/master/curly_en-GB-3.3.1.oxt)
+[OpenOffice.org 3.x variant (curly_en-GB-3.3.2.oxt)](https://raw.githubusercontent.com/peter88213/curly-en-GB/master/curly_en-GB-3.3.2.oxt)
 
 - Installation right at download, by double-clicking on the downloaded file, or via the OpenOffice/LibreOffice Extension Manager.
 
